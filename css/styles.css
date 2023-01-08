@@ -1,79 +1,184 @@
+:root {
+    --title-text-color: #2E2F42;
+    --main-color-text: #434455;
+    --accent-color: #4D5AE5;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-text-color);
+    letter-spacing: 0.02em;
+}
 .link {
-    text-decoration: none;
+text-decoration: none;
 }
 
 .list {
-    list-style: none;
+list-style: none;
 }
-
-body {
-
-}
-
-
+/* ======================================HEADER============================= */
 .logo {
-font-family: 'Raleway', sans-serif ;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+    font-family: 'Raleway', sans-serif ;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-color: #2E2F42;
+    color: inherit;
+}
+
+.logo-accent {
+    color: var(--accent-color);
 }
 
 .nav-link {
-font-family: 'Roboto', sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-
-color: #2E2F42;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: inherit;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #4D5AE5;
+    color: var(--accent-color);
 }
-
+.address {
+    font-style: normal;
+}
 .address-link {
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 1.5;
-
-color: #434455;
-
+    color: var(--main-color-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .address-link:hover,
 .address-link:focus {
-    color: #4D5AE5;
-}
-
-.hero-title {
-font-family: 'Roboto', sans-serif;
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
-
-color: #FFFFFF;
-background: #2E2F42; ;
+    color: var(--accent-color);
+    }
+/* ======================================HEADER============================= */
+/* ======================================HERO============================= */
+.hero-title { 
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    color: #FFFFFF;
+    background: var(--title-text-color); ;
 }
 
 .hero-btn {
-font-family: 'Roboto', sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.54px;
-align-items: center;
-letter-spacing: 0.04em;
-
-color: #FFFFFF;
-background: #404BBF
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 169px;
+    height: 56px;
+    left: 636px;
+    top: 428px;
+    background: #404BBF
 }
-    
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: var(--accent-color);
+}
+/* ======================================HERO============================= */
+/*======================================FEATURE=========================== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;    
+}
+
+    .feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.feature-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main-color-text);
+}
+/* ======================================FEATURE============================= */
+/* ======================================TEAM============================= */
+.team-title {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main-color-text);
+}
+/* ======================================TEAM============================= */
+
+/* ======================================WORK============================= */
+.work-title {
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+text-transform: capitalize;
+}
+
+/* ======================================WORK============================= */
+
+/* ======================================FOOTER============================= */
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E7E9FC;
+    background: var(--main-color-text);
+}
+/* ======================================FOOTER============================= */
+/* ======================================PORTFOLIO============================= */
+
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--accent-color);
+    background: #F4F4FD;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background: #404BBF;
+    color: #FFFFFF;
+}
+.project-card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.project-card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main-color-text);
+}
