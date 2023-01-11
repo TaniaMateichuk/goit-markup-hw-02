@@ -1,12 +1,19 @@
 :root {
-    --title-text-color: #2E2F42;
+    --dark-color-title: #2E2F42;
+    --primary-light-color: #FFFF;
     --main-color-text: #434455;
-    --accent-color: #4D5AE5;
+    --accent-color: #E7E9FC;
+    --presed-state-btn: #404BBF;
+    --primary-brand-color: #4D5AE5;
+    --hero-background-color: #2E2F42;
+    --light-background-color: #F4F4FD;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--title-text-color);
+    color: var(--dark-color-title);
     letter-spacing: 0.02em;
+
 }
 .link {
 text-decoration: none;
@@ -28,11 +35,11 @@ list-style: none;
 }
 
 .logo-accent {
-    color: var(--accent-color);
+    color: var(--primary-brand-color);
 }
 
 .nav-link {
-    
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -41,30 +48,31 @@ list-style: none;
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--accent-color);
+    color: var(--primary-brand-color);
 }
+
 .address {
     font-style: normal;
 }
 .address-link {
     color: var(--main-color-text);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
 }
 
 .address-link:hover,
 .address-link:focus {
-    color: var(--accent-color);
+    color: var(--primary-brand-color);
     }
+
 /* ======================================HEADER============================= */
 /* ======================================HERO============================= */
 .hero-title { 
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    color: #FFFFFF;
-    background: var(--title-text-color); ;
+    color: var(--primary-light-color);
+    background: var(--hero-background-color); 
 }
 
 .hero-btn {
@@ -74,17 +82,13 @@ list-style: none;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    color: #FFFFFF;
-    width: 169px;
-    height: 56px;
-    left: 636px;
-    top: 428px;
-    background: #404BBF
+    color: var(--primary-light-color);
+    background: var(--primary-brand-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background: var(--accent-color);
+    background: var(--presed-state-btn);
 }
 /* ======================================HERO============================= */
 /*======================================FEATURE=========================== */
@@ -107,7 +111,7 @@ list-style: none;
     line-height: 1.2;
 }
 .feature-text {
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.5;
     color: var(--main-color-text);
@@ -127,7 +131,7 @@ list-style: none;
     line-height: 1.2;
 }
 .team-text {
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.5;
     color: var(--main-color-text);
@@ -147,10 +151,10 @@ text-transform: capitalize;
 /* ======================================FOOTER============================= */
 
 .footer-text {
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.5;
-    color: #E7E9FC;
+    color: var(--accent-color);
     background: var(--main-color-text);
 }
 /* ======================================FOOTER============================= */
@@ -163,13 +167,13 @@ text-transform: capitalize;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    color: var(--accent-color);
-    background: #F4F4FD;
+    color: var(--primary-brand-color);
+    background: var(--light-background-color);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    background: #404BBF;
-    color: #FFFFFF;
+    background: var(--presed-state-btn);
+    color: var(--primary-light-color);
 }
 .project-card-title {
     font-weight: 500;
@@ -177,7 +181,7 @@ text-transform: capitalize;
     line-height: 1.2;
 }
 .project-card-text {
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 1.5;
     color: var(--main-color-text);
