@@ -34,7 +34,7 @@ list-style: none;
     color: inherit;
 }
 
-.logo-accent {
+.logo-brand {
     color: var(--primary-brand-color);
 }
 
@@ -67,12 +67,16 @@ list-style: none;
 
 /* ======================================HEADER============================= */
 /* ======================================HERO============================= */
+.hero {
+    background: var(--hero-background-color);
+}
+
 .hero-title { 
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     color: var(--primary-light-color);
-    background: var(--hero-background-color); 
+
 }
 
 .hero-btn {
@@ -84,6 +88,7 @@ list-style: none;
     cursor: pointer;
     color: var(--primary-light-color);
     background: var(--primary-brand-color);
+    
 }
 
 .hero-btn:hover,
@@ -149,13 +154,18 @@ text-transform: capitalize;
 /* ======================================WORK============================= */
 
 /* ======================================FOOTER============================= */
-
+.footer-page {
+    background: var(--main-color-text);
+}
 .footer-text {
-    
     font-size: 16px;
     line-height: 1.5;
     color: var(--accent-color);
-    background: var(--main-color-text);
+
+}
+
+.footer-logo {
+    color: var(--light-background-color);
 }
 /* ======================================FOOTER============================= */
 /* ======================================PORTFOLIO============================= */
