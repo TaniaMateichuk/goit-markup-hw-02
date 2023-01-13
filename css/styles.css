@@ -166,6 +166,7 @@ text-transform: capitalize;
 
 .footer-logo {
     color: var(--light-background-color);
+    text-transform: uppercase;
 }
 /* ======================================FOOTER============================= */
 /* ======================================PORTFOLIO============================= */
