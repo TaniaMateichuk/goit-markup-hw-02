@@ -23,7 +23,7 @@ text-decoration: none;
 list-style: none;
 }
 /* ======================================HEADER============================= */
-.logo {
+.logo-header {
     font-family: 'Raleway', sans-serif ;
     font-weight: 800;
     font-size: 18px;
@@ -165,8 +165,13 @@ text-transform: capitalize;
 }
 
 .footer-logo {
-    color: var(--light-background-color);
     text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    color: var(--light-background-color);
 }
 /* ======================================FOOTER============================= */
 /* ======================================PORTFOLIO============================= */
